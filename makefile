@@ -3,5 +3,5 @@
 add:
 	bash Scripts/readme_gen.sh
 	git add --all
-	git commit -m "Added apk"
+	git commit -m "Apk updated."
 	git push
