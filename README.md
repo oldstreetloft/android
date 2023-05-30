@@ -1,24 +1,24 @@
 # Android Apk Files
 
-[Aurora Store](https://github.com/oldstreetloft/android/raw/main/Apks/Aurora Store.apk)
+[AuroraStore](https://github.com/oldstreetloft/android/raw/main/Apks/AuroraStore.apk)
 
-[Brave Browser](https://github.com/oldstreetloft/android/raw/main/Apks/Brave Browser.apk)
+[BraveBrowser](https://github.com/oldstreetloft/android/raw/main/Apks/BraveBrowser.apk)
 
-[Cake Wallet](https://github.com/oldstreetloft/android/raw/main/Apks/Cake Wallet.apk)
+[CakeWallet](https://github.com/oldstreetloft/android/raw/main/Apks/CakeWallet.apk)
 
 [FDroid](https://github.com/oldstreetloft/android/raw/main/Apks/FDroid.apk)
 
 [Hushed](https://github.com/oldstreetloft/android/raw/main/Apks/Hushed.apk)
 
-[KeePass DX](https://github.com/oldstreetloft/android/raw/main/Apks/KeePass DX.apk)
+[KeePassDX](https://github.com/oldstreetloft/android/raw/main/Apks/KeePassDX.apk)
 
-[Mullvad VPN](https://github.com/oldstreetloft/android/raw/main/Apks/Mullvad VPN.apk)
+[MullvadVPN](https://github.com/oldstreetloft/android/raw/main/Apks/MullvadVPN.apk)
 
-[Proton Mail](https://github.com/oldstreetloft/android/raw/main/Apks/Proton Mail.apk)
+[ProtonMail](https://github.com/oldstreetloft/android/raw/main/Apks/ProtonMail.apk)
 
-[Proton VPN](https://github.com/oldstreetloft/android/raw/main/Apks/Proton VPN.apk)
+[ProtonVPN](https://github.com/oldstreetloft/android/raw/main/Apks/ProtonVPN.apk)
 
-[SSE Encryptor](https://github.com/oldstreetloft/android/raw/main/Apks/SSE Encryptor.apk)
+[SSEEncryptor](https://github.com/oldstreetloft/android/raw/main/Apks/SSEEncryptor.apk)
 
 [Session](https://github.com/oldstreetloft/android/raw/main/Apks/Session.apk)
 
@@ -26,8 +26,8 @@
 
 [Warp](https://github.com/oldstreetloft/android/raw/main/Apks/Warp.apk)
 
-[Wickr Enterprise](https://github.com/oldstreetloft/android/raw/main/Apks/Wickr Enterprise.apk)
+[WickrEnterprise](https://github.com/oldstreetloft/android/raw/main/Apks/WickrEnterprise.apk)
 
-[Wickr Me](https://github.com/oldstreetloft/android/raw/main/Apks/Wickr Me.apk)
+[WickrMe](https://github.com/oldstreetloft/android/raw/main/Apks/WickrMe.apk)
 
 [simplelogin](https://github.com/oldstreetloft/android/raw/main/Apks/simplelogin.apk)
