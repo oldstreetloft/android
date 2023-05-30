@@ -1,31 +1,31 @@
 # Android Apk Files
 
-*[Aurora Store](https://github.com/oldstreetloft/android/raw/main/Apks/AuroraStore.apk)*
+[AuroraStore](https://github.com/oldstreetloft/android/raw/main/Apks/AuroraStore.apk)
 
-*[Brave Browser](https://github.com/oldstreetloft/android/raw/main/Apks/Brave.apk)*
+[Brave](https://github.com/oldstreetloft/android/raw/main/Apks/Brave.apk)
 
-*[Cake Wallet](https://github.com/oldstreetloft/android/raw/main/Apks/Cake.apk)*
+[Cake](https://github.com/oldstreetloft/android/raw/main/Apks/Cake.apk)
 
-*[FDroid](https://github.com/oldstreetloft/android/raw/main/Apks/FDroid.apk)*
+[FDroid](https://github.com/oldstreetloft/android/raw/main/Apks/FDroid.apk)
 
-*[Hushed](https://github.com/oldstreetloft/android/raw/main/Apks/Hushed.apk)*
+[Hushed](https://github.com/oldstreetloft/android/raw/main/Apks/Hushed.apk)
 
-*[Proton Mail](https://github.com/oldstreetloft/android/raw/main/Apks/ProtonMail.apk)*
+[KeePassDX](https://github.com/oldstreetloft/android/raw/main/Apks/KeePassDX.apk)
 
-*[Proton VPN](https://github.com/oldstreetloft/android/raw/main/Apks/ProtonVPN.apk)*
+[MullvadVPN](https://github.com/oldstreetloft/android/raw/main/Apks/MullvadVPN.apk)
 
-*[Signal Messenger](https://github.com/oldstreetloft/android/raw/main/Apks/Signal.apk)*
+[ProtonMail](https://github.com/oldstreetloft/android/raw/main/Apks/ProtonMail.apk)
 
-*[KeePass DX](https://github.com/oldstreetloft/android/raw/main/Apks/KeePassDX.apk)*
+[ProtonVPN](https://github.com/oldstreetloft/android/raw/main/Apks/ProtonVPN.apk)
 
-*[Mullvad VPN](https://github.com/oldstreetloft/android/raw/main/Apks/MullvadVPN.apk)*
+[SSEEncryptor](https://github.com/oldstreetloft/android/raw/main/Apks/SSEEncryptor.apk)
 
-*[Session Messenger](https://github.com/oldstreetloft/android/raw/main/Apks/Session.apk)*
+[Session](https://github.com/oldstreetloft/android/raw/main/Apks/Session.apk)
 
-*[simplelogin](https://github.com/oldstreetloft/android/raw/main/Apks/simplelogin.apk)*
+[Signal](https://github.com/oldstreetloft/android/raw/main/Apks/Signal.apk)
 
-*[SSE Encryptor](https://github.com/oldstreetloft/android/raw/main/Apks/SSEEncryptor.apk)*
+[WickrEnterprise](https://github.com/oldstreetloft/android/raw/main/Apks/WickrEnterprise.apk)
 
-*[Wickr Enterprise](https://github.com/oldstreetloft/android/raw/main/Apks/WickrEnterprise.apk)*
+[WickrME](https://github.com/oldstreetloft/android/raw/main/Apks/WickrME.apk)
 
-*[Wickr ME](https://github.com/oldstreetloft/android/raw/main/Apks/WickrME.apk)*
+[simplelogin](https://github.com/oldstreetloft/android/raw/main/Apks/simplelogin.apk)
