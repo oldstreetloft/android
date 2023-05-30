@@ -3,7 +3,7 @@
 
 default:
 	echo "Writing README.md"
-	bash Scripts/readme_gen.sh 1> /dev/null
+	echo ; bash Scripts/readme_gen.sh ; echo
 	git add --all
 	git commit -m "Apk updated."
 	git push
