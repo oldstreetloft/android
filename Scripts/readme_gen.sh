@@ -1,9 +1,9 @@
 #!/bin/bash
 main() {
-    readme_gen | tee ../README.md
+    readme_gen | tee README.md
 }
 
-readme_gen() {
+main() {
     url="https://github.com/oldstreetloft/android/raw/main/Apks/"
 
     echo "# Android Apk Files"
