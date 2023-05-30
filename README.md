@@ -24,6 +24,8 @@
 
 [Signal](https://github.com/oldstreetloft/android/raw/main/Apks/Signal.apk)
 
+[Warp](https://github.com/oldstreetloft/android/raw/main/Apks/Warp.apk)
+
 [WickrEnterprise](https://github.com/oldstreetloft/android/raw/main/Apks/WickrEnterprise.apk)
 
 [WickrME](https://github.com/oldstreetloft/android/raw/main/Apks/WickrME.apk)

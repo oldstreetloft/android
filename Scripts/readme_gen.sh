@@ -1,7 +1,4 @@
 #!/bin/bash
-main() {
-    readme_gen | tee README.md
-}
 
 main() {
     url="https://github.com/oldstreetloft/android/raw/main/Apks/"
@@ -13,4 +10,4 @@ main() {
         echo ; echo "[$apkname]($url$apkfile)" ; done
 }
 
-main
+main | tee README.md
