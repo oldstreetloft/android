@@ -12,20 +12,20 @@
 
 *[Proton Mail](https://github.com/oldstreetloft/android/raw/main/Apks/ProtonMail.apk)*
 
-*[Proton VPN](https://github.com/oldstreetloft/android/raw/main/Apks/Protonvpn.apk)*
+*[Proton VPN](https://github.com/oldstreetloft/android/raw/main/Apks/ProtonVPN.apk)*
 
 *[Signal Messenger](https://github.com/oldstreetloft/android/raw/main/Apks/Signal.apk)*
 
-*[KeePass DX](https://github.com/oldstreetloft/android/raw/main/Apks/keepassdx.apk)*
+*[KeePass DX](https://github.com/oldstreetloft/android/raw/main/Apks/KeePassDX.apk)*
 
-*[Mullvad VPN](https://github.com/oldstreetloft/android/raw/main/Apks/mullvadvpn.apk)*
+*[Mullvad VPN](https://github.com/oldstreetloft/android/raw/main/Apks/MullvadVPN.apk)*
 
-*[Session Messenger](https://github.com/oldstreetloft/android/raw/main/Apks/session.apk)*
+*[Session Messenger](https://github.com/oldstreetloft/android/raw/main/Apks/Session.apk)*
 
 *[simplelogin](https://github.com/oldstreetloft/android/raw/main/Apks/simplelogin.apk)*
 
-*[SSE Encryptor](https://github.com/oldstreetloft/android/raw/main/Apks/sseparanoiaworks.apk)*
+*[SSE Encryptor](https://github.com/oldstreetloft/android/raw/main/Apks/SSEEncryptor.apk)*
 
-*[Wickr Enterprise](https://github.com/oldstreetloft/android/raw/main/Apks/wickrenterprise.apk)*
+*[Wickr Enterprise](https://github.com/oldstreetloft/android/raw/main/Apks/WickrEnterprise.apk)*
 
-*[Wickr ME](https://github.com/oldstreetloft/android/raw/main/Apks/wickrme.apk)*
+*[Wickr ME](https://github.com/oldstreetloft/android/raw/main/Apks/WickrME.apk)*
