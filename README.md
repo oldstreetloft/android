@@ -2,9 +2,9 @@
 
 [AuroraStore](https://github.com/oldstreetloft/android/raw/main/Apks/AuroraStore.apk)
 
-[Brave](https://github.com/oldstreetloft/android/raw/main/Apks/Brave.apk)
+[BraveBrowser](https://github.com/oldstreetloft/android/raw/main/Apks/BraveBrowser.apk)
 
-[Cake](https://github.com/oldstreetloft/android/raw/main/Apks/Cake.apk)
+[CakeWallet](https://github.com/oldstreetloft/android/raw/main/Apks/CakeWallet.apk)
 
 [FDroid](https://github.com/oldstreetloft/android/raw/main/Apks/FDroid.apk)
 
