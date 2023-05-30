@@ -7,7 +7,7 @@ main() {
     find Apks/ -name "*.apk" | sort | while read apkfile; do
         apkfile=$(echo $apkfile | cut -c 7-)
         apkname=$(echo $apkfile | rev | cut -c 5- | rev)
-        echo ; echo "[$apkname]('$url$apkfile')" ; done
+        echo ; echo "[$apkname]("$url$apkfile")" ; done
 }
 
 main | tee README.md
