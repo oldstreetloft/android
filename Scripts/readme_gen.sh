@@ -9,4 +9,4 @@ main() {
         echo ; echo "[$apkname]($url$apkfile)" ; done
 }
 
-main > ../README.md
+main | tee ../README.md
