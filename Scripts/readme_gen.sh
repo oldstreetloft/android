@@ -1,7 +1,7 @@
 #!/bin/bash
 
 main() {
-    fdroid_download || echo "ERROR: Try changing the package name in Scripts/fdroid.plist"
+    fdroid_download || printf "\n\nERROR: Try changing the package name in Scripts/fdroid.plist\n\n"
     write_readme > README.md
 }
 
@@ -23,13 +23,14 @@ fdroid_download() {
 
         QUERY_FDROID=$(curl -sL "https://search.f-droid.org/?q=$APP_NAME")
         PARSE_QUERY=$(echo "$QUERY_FDROID" | grep package-header | grep -o 'href="[^"]*"' | sed 's/href="//;s/"$//' | head -n 1)
-
         APP_PAGE=$(curl -sL "$PARSE_QUERY")
+
         DOWN_URL=$(echo "$APP_PAGE" | tr " " "\n" | grep .apk | tail -n +2 | grep -o '".*"' | sed 's/"//g' | head -n 1)
         PNG_URL=$(echo "$APP_PAGE" | tr " " "\n" | grep .png | grep repo | grep content | grep -o '".*"' | sed 's/"//g' | head -n 1)
-        echo "Downloading $APP_NAME_PATH.apk"
-        [ -z "$DOWN_URL" ] && echo "$APP_NAME_PATH failed to query in F-Droid, change package name in Scripts/fdroid.plist"
-        curl -sL $DOWN_URL -o "Apks/$APP_NAME_PATH.apk" ; done
+
+        [ -z "$DOWN_URL" ] && printf "\n\nERROR: $APP_NAME_PATH failed to query on F-Droid!\n\n"
+        printf "\nDownloading $APP_NAME_PATH.apk"
+        curl -sL $DOWN_URL -o "Apks/$APP_NAME_PATH.apk" && printf " ✓\n" ; done
 }
 
 main
