@@ -1,10 +1,14 @@
-.PHONY: default
-.SILENT:
+.PHONY:		default
+.SILENT:	default
 
-default:
-	echo
-	bash Scripts/readme_gen.sh
-	echo
-	git add --all
-	git commit -m "Apk updated."
-	git push
+default:	clean
+			bash Scripts/readme_gen.sh
+			git add --all
+			git commit -m "Apk updated."
+			git push
+
+test:		clean
+			bash Scripts/readme_gen_test.sh
+
+clean:		clean
+			rm -rf Apks/*-.apk
