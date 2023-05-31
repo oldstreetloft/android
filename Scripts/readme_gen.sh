@@ -1,7 +1,7 @@
 #!/bin/bash
 
 main() {
-    url="https://raw.githubusercontent.com/oldstreetloft/android/main/Apks/"
+    url="https://github.com/oldstreetloft/android/raw/main/Apks/"
 
     echo "# Android Apk Files"
     find Apks/ -name "*.apk" | sort | while read apkfile; do
