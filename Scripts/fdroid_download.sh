@@ -1,7 +1,7 @@
 #!/bin/bash
 
 main() {
-	APP_NAME_RAW="$1"
+    APP_NAME_RAW="$1"
     APP_NAME=$(echo "$APP_NAME_RAW" | tr '[:upper:]' '[:lower:]' | tr ' ' '+')
     API_OUTPUT=$(curl -sL "https://search.f-droid.org/?q=$APP_NAME")
     API_URL=$(echo "$API_OUTPUT" | grep package-header | grep -o 'href="[^"]*"' | sed 's/href="//;s/"$//' | head -n 1)    
