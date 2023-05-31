@@ -18,8 +18,8 @@ fdroid_download() {
         PNG_URL=$(echo "$APP_PAGE" | tr " " "\n" | grep .png | grep repo | grep content | grep -o '".*"' | sed 's/"//g' | head -n 1)
 
         [ -z "$DOWN_URL" ] && printf "\n\nERROR: $APP_NAME_PATH failed to query on F-Droid!\n\n"
-        printf "\nDownloading $APP_NAME_PATH.apk"
-        curl -sL $DOWN_URL -o "Apks/$APP_NAME_PATH.apk" && printf " ✓\n" ; done
+        printf "Downloading $APP_NAME_PATH.apk"
+        curl -sL $DOWN_URL -o "Apks/$APP_NAME_PATH.apk" && printf " ✓\n\n"; done
 }
 
 write_readme(){
