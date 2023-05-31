@@ -29,7 +29,7 @@ fdroid_download() {
         PNG_URL=$(echo "$APP_PAGE" | tr " " "\n" | grep .png | grep repo | grep content | grep -o '".*"' | sed 's/"//g' | head -n 1)
         echo "Downloading $APP_NAME_PATH.apk"
         [ -z "$DOWN_URL" ] && echo "$APP_NAME_PATH failed to query in F-Droid, change package name in Scripts/fdroid.plist"
-        curl -sL $DOWN_URL -o "Apks/$APP_NAME_PATH-.apk" ; done
+        curl -sL $DOWN_URL -o "Apks/$APP_NAME_PATH-TEST.apk" ; done
 }
 
 main

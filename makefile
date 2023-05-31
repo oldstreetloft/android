@@ -11,4 +11,4 @@ test:		clean
 			bash Scripts/readme_gen_test.sh
 
 clean:		clean
-			rm -rf Apks/*-.apk
+			rm -rf Apks/*-TEST.apk
