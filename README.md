@@ -24,9 +24,13 @@
 
 *[Session](https://github.com/oldstreetloft/android/raw/main/Apks/Session.apk)*
 
+*[Shelter](https://github.com/oldstreetloft/android/raw/main/Apks/Shelter.apk)*
+
 *[Signal](https://github.com/oldstreetloft/android/raw/main/Apks/Signal.apk)*
 
 *[Warp](https://github.com/oldstreetloft/android/raw/main/Apks/Warp.apk)*
+
+*[Wasted](https://github.com/oldstreetloft/android/raw/main/Apks/Wasted.apk)*
 
 *[WickrEnterprise](https://github.com/oldstreetloft/android/raw/main/Apks/WickrEnterprise.apk)*
 
