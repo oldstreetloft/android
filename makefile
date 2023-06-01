@@ -1,5 +1,5 @@
 .PHONY:		default
-.SILENT:	default
+.SILENT:
 
 default:
 			bash Scripts/fdroid_download.sh
