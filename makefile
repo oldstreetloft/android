@@ -1,12 +1,9 @@
 .PHONY:		all
-.SILENT:	all
-
-all:		help default commit pull readme
-
-help:
-			bash Scripts/make_usage.sh
+.SILENT:
 
 default:	pull readme commit
+
+all:		default commit pull readme h help
 
 pull:
 			bash Scripts/fdroid_download.sh
@@ -18,3 +15,8 @@ commit:
 			git add --all
 			git commit -m "Update."
 			git push
+
+h:			help
+
+help:
+			bash Scripts/make_usage.sh
