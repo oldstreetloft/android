@@ -17,8 +17,11 @@ commit:
 			git commit -m "Update."
 			git push ; echo
 
-remove:		readme commit
-			bash Scripts/remove_apk.sh
+add:
+			bash Scripts/apk_add.sh
+
+remove:
+			bash Scripts/apk_remove.sh
 
 help:
 			bash Scripts/make_usage.sh
