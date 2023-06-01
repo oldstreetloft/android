@@ -13,7 +13,7 @@ commit:
 			echo ; echo "Commiting changes to repo:" ; echo
 			git add --all
 			git commit -m "Update."
-			git push && echo || echo
+			git push ; echo
 
 help:
 			bash Scripts/make_usage.sh
