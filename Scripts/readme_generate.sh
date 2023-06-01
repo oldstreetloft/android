@@ -3,7 +3,7 @@
 main() {
     # Define main public apk folder
     url="https://github.com/oldstreetloft/android/raw/main/Apks/"
-    # Generate README.md from .apk in apk folder
+    # Generate README.md from each .apk in apk folder
     printf "\nWriting README.md:\n\n"
     write_readme | tee README.md ; echo
 }
