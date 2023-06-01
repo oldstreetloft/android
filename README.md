@@ -1,4 +1,4 @@
-# Android Apks\n
+# Android Apks
 
 *[AuroraStore](https://github.com/oldstreetloft/android/raw/main/Apks/AuroraStore.apk)*
 

@@ -29,7 +29,7 @@ fdroid_download() {
 write_readme(){
     url="https://github.com/oldstreetloft/android/raw/main/Apks/"
 
-    echo "# Android Apks\n"
+    echo "# Android Apks"
 
     find Apks/ -name "*.apk" | sort | while read apkfile ; do
         apkfile=$(echo $apkfile | cut -c 7-)
