@@ -11,16 +11,18 @@ main() {
 fdroid_download() {
     cat "fdroid.plist" | while read APP_NAME_RAW ; do
         # App name translations
-        APP_NAME_PATH=$(echo $APP_NAME_RAW | sed 's/ //g')
-        APP_NAME_URL=$(echo "$APP_NAME_RAW" | tr ' ' '+')
+        APP_NAME_PATH=$(echo $APP_NAME_RAW | sed 's/ //g')      # Remove whitespace for use in filename and README.md
+        APP_NAME_URL=$(echo "$APP_NAME_RAW" | tr ' ' '+')       # Spaces to plus symbols for use in URLs
         # Search FDroid
         QUERY_FDROID=$(curl -sL "https://search.f-droid.org/?q=$APP_NAME_URL")
+        # Parse Results for app page
         PARSE_QUERY=$(echo "$QUERY_FDROID" | grep package-header | grep -o 'href="[^"]*"' | sed 's/href="//;s/"$//' | head -n 1)
+        # Fetch app page
         APP_PAGE=$(curl -sL "$PARSE_QUERY")
-        # Define URLs
+        # Parse app page results for URLs
         DOWN_URL=$(echo "$APP_PAGE" | tr " " "\n" | grep .apk | tail -n +2 | grep -o '".*"' | sed 's/"//g' | head -n 1)
         PNG_URL=$(echo "$APP_PAGE" | tr " " "\n" | grep .png | grep repo | grep content | grep -o '".*"' | sed 's/"//g' | head -n 1)
-        # Check URL and Download .apk
+        # Check for URL and Download .apk
         [ -z "$DOWN_URL" ] && printf "\n\nERROR: $APP_NAME_PATH failed to query on F-Droid!\n\n"
         printf "Downloading $APP_NAME_PATH.apk"
         curl -sL $DOWN_URL -o "Apks/$APP_NAME_PATH-TEST.apk" && printf " ✓\n" ; done
