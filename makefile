@@ -1,7 +1,9 @@
 .PHONY:		all
 .SILENT:
 
-default:	pull readme commit
+default:	help
+
+update:		pull readme commit
 
 pull:
 			bash Scripts/fdroid_download.sh

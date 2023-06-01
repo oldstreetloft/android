@@ -7,5 +7,13 @@ make <option>
 
 OPTIONS:
 EOF
-awk 'NR==4' makefile | tr ' ' '\n' | sed 's/all:\t\t//g'
-echo
+
+# Lists all make targets
+tail -n +4 makefile | grep ':' | grep -v "echo" | sed 's/://g' | sed '$d'
+
+cat << EOF
+
+TLDR:
+make update
+
+EOF
