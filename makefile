@@ -1,12 +1,15 @@
-.PHONY:		default commit
+.PHONY:		all
 .SILENT:
 
-default:
+all:		default commit pull readme
+
+default:	pull readme commit
+
+pull:
 			bash Scripts/fdroid_download.sh
+
+readme:
 			bash Scripts/readme_generate.sh
-			git add --all
-			git commit -m "Apks updated."
-			git push
 
 commit:
 			git add --all
