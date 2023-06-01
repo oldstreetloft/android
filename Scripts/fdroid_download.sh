@@ -17,13 +17,14 @@ fdroid_download() {
         PARSE_QUERY=$(echo "$QUERY_FDROID" | grep package-header | grep -o 'href="[^"]*"' | sed 's/href="//;s/"$//' | head -n 1)
         # Fetch app page results to a variable
         APP_PAGE=$(curl -sL "$PARSE_QUERY")
+        [ -z "$APP_PAGE" ] && printf "\n\nERROR: $APP_NAME_PATH failed to query on F-Droid!\n\n"
         # Parse app page results for URLs
         DOWN_URL=$(echo "$APP_PAGE" | tr " " "\n" | grep .apk | tail -n +2 | grep -o '".*"' | sed 's/"//g' | head -n 1)
         PNG_URL=$(echo "$APP_PAGE" | tr " " "\n" | grep .png | grep repo | grep content | grep -o '".*"' | sed 's/"//g' | head -n 1)
         # Inform user about non-existant app
         [ -z "$DOWN_URL" ] && printf "\n\nERROR: $APP_NAME_PATH failed to query on F-Droid!\n\n"
         # Download apk to apk folder, check for success
-        printf "Downloading $APP_NAME_PATH from FDroid"
+        printf "Downloading $APP_NAME_PATH"
         curl -sL $DOWN_URL -o "Apks/$APP_NAME_PATH.apk" && printf " ✓\n"
         curl -sL $PNG_URL -o "Images/$APP_NAME_PATH.png"
 }
