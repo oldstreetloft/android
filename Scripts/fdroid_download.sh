@@ -3,7 +3,7 @@
 main() {
     # Download .apk from FDroid website using fdroid.plist as source, inform user of non-existant app
     printf "\nDownloading .apk files from FDroid:\n\n"
-    fdroid_download | printf "$$ failed to query\n\nERROR: Try changing the package name in Scripts/fdroid.plist\n\n"
+    fdroid_download || printf "$$ failed to query\n\nERROR: Try changing the package name in Scripts/fdroid.plist\n\n"
 }
 
 fdroid_download() {
