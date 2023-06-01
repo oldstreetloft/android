@@ -1,14 +1,9 @@
 .PHONY:		default
 .SILENT:	default
 
-default:	clean
-			bash Scripts/readme_gen.sh
+default:
+			bash Scripts/fdroid_download.sh
+			bash Scripts/readme_generate.sh
 			git add --all
 			git commit -m "Apk updated."
 			git push
-
-test:		clean
-			bash Scripts/readme_gen_test.sh
-
-clean:		clean
-			rm -rf Apks/*-TEST.apk

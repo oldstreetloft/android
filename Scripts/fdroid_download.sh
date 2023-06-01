@@ -4,9 +4,6 @@ main() {
     # Download .apk from FDroid website useing fdroid.plist as the source
     printf "\nDownloading .apk files from FDroid:\n\n"
     fdroid_download || printf "\n\nERROR: Try changing the package name in Scripts/fdroid.plist\n\n"
-    # Generate README.md from .apk in apk folder
-    printf "\nWriting README.md:\n\n"
-    write_readme | tee README.md ; echo
 }
 
 fdroid_download() {
@@ -27,19 +24,7 @@ fdroid_download() {
         [ -z "$DOWN_URL" ] && printf "\n\nERROR: $APP_NAME_PATH failed to query on F-Droid!\n\n"
         # Download apk
         printf "Downloading $APP_NAME_PATH.apk"
-        curl -sL $DOWN_URL -o "Apks/$APP_NAME_PATH-TEST.apk" && printf " ✓\n" ; done
-}
-
-write_readme(){
-    # Define apk folder
-    url="https://github.com/oldstreetloft/android/raw/main/Apks/"
-    # Write title
-    echo "# Android Apks"
-    # Write hyperlink
-    find Apks/ -name "*.apk" | sort | while read apkfile ; do
-        apkfile=$(echo $apkfile | cut -c 7-)                # hyperlink filename
-        apkname=$(echo $apkfile | rev | cut -c 5- | rev)    # hyperlink displayname
-        echo ; echo "*[$apkname]($url$apkfile)*" ; done     # hyperlink write
+        curl -sL $DOWN_URL -o "Apks/$APP_NAME_PATH.apk" && printf " ✓\n" ; done
 }
 
 # Start execution
