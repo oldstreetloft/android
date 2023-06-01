@@ -29,12 +29,12 @@ fdroid_download() {
 write_readme(){
     url="https://github.com/oldstreetloft/android/raw/main/Apks/"
 
-    printf "\n# Android Apks\n\n"
+    printf "# Android Apks\n"
 
     find Apks/ -name "*.apk" | sort | while read apkfile ; do
         apkfile=$(echo $apkfile | cut -c 7-)
         apkname=$(echo $apkfile | rev | cut -c 5- | rev)
-        echo "*[$apkname]($url$apkfile)*" ; done
+        printf "\n\n*[$apkname]($url$apkfile)*" ; done
 }
 
 main
