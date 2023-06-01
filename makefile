@@ -1,5 +1,5 @@
 .PHONY:		all
-.SILENT:	all
+.SILENT:
 
 default:	pull readme commit
 
