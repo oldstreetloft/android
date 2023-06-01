@@ -1,21 +1,24 @@
 #!/bin/bash
 
 main() {
+    # Define main public apk folder
+    url="https://github.com/oldstreetloft/android/raw/main/Apks/"
     # Generate README.md from .apk in apk folder
     printf "\nWriting README.md:\n\n"
     write_readme | tee README.md ; echo
 }
 
 write_readme(){
-    # Define apk folder
-    url="https://github.com/oldstreetloft/android/raw/main/Apks/"
     # Write title
     echo "# Android Apks"
-    # Write hyperlink
-    find Apks/ -name "*.apk" | sort | while read apkfile ; do
-        apkfile=$(echo $apkfile | cut -c 7-)                # hyperlink filename
-        apkname=$(echo $apkfile | rev | cut -c 5- | rev)    # hyperlink displayname
-        echo ; echo "*[$apkname]($url$apkfile)*" ; done     # hyperlink write
+    # Itterate through each apk in apk folder and write corresponding hyperlinks
+    find Apks/ -name "*.apk" | sort | while read apkfile ; do write_hyperlink ; done
+}
+
+write_hyperlink() {
+    apkfile=$(echo $apkfile | cut -c 7-)                # hyperlink filename
+    apkname=$(echo $apkfile | rev | cut -c 5- | rev)    # hyperlink display name
+    echo ; echo "*[$apkname]($url$apkfile)*"            # Write hyperlink
 }
 
 # Start execution
