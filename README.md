@@ -22,7 +22,7 @@
 
 *[ProtonVPN](https://github.com/oldstreetloft/android/raw/main/Apks/ProtonVPN.apk)*
 
-*[SecretSpaceEncryptor](https://github.com/oldstreetloft/android/raw/main/Apks/SecretSpaceEncryptor.apk)*
+*[SecretSpaceEncryptorSSE](https://github.com/oldstreetloft/android/raw/main/Apks/SecretSpaceEncryptorSSE.apk)*
 
 *[Session](https://github.com/oldstreetloft/android/raw/main/Apks/Session.apk)*
 
