@@ -1,7 +1,10 @@
 .PHONY:		all
-.SILENT:
+.SILENT:	all
 
-all:		default commit pull readme
+all:		help default commit pull readme
+
+help:
+			bash Scripts/make_usage.sh
 
 default:	pull readme commit
 
@@ -13,5 +16,5 @@ readme:
 
 commit:
 			git add --all
-			git commit -m "Misc fixes."
+			git commit -m "Update."
 			git push
