@@ -41,5 +41,6 @@ write_readme(){
         apkname=$(echo $apkfile | rev | cut -c 5- | rev)    # hyperlink displayname
         echo ; echo "*[$apkname]($url$apkfile)*" ; done     # hyperlink write
 }
+
 # Start execution
 main
