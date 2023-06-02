@@ -27,7 +27,7 @@ fdroid_download() {
         # Download apk to apk folder, check for success
         printf "Downloading $APP_NAME_PATH"
         curl -sL $DOWN_URL -o "Apks/$APP_NAME_PATH.apk" && printf " ✓\n"
-        curl -sL $PNG_URL -o "Images/$APP_NAME_PATH.png" 2> /dev/null || printf "\nApp has no png on FDroid\n\n"
+        # curl -sL $PNG_URL -o "Images/$APP_NAME_PATH.png" 2> /dev/null || printf "\nApp has no png on FDroid\n\n"
 }
 
 # Start execution
