@@ -6,13 +6,16 @@ default:
 			make readme_generate
 			make commit
 
+help:
+			bash Scripts/print_help.sh			# Print makefile usage
+
 fdroid_add:
 			bash Scripts/fdroid_add.sh			# Add app to fdroid.plist
 			make fdroid_download
 			make readme_generate
 
 fdroid_remove:
-			bash Scripts/fdroid_rm.sh			# Remove apk from Apk folder and app from fdroid.plist
+			bash Scripts/fdroid_remove.sh		# Remove apk and app from fdroid.plist
 			make readme_generate
 
 fdroid_download:
