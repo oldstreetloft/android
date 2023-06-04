@@ -5,7 +5,7 @@ main() {
     url="https://github.com/oldstreetloft/android/raw/main/Apks/"
     # Generate README.md from each .apk in apk folder
     printf "\nWriting README.md:\n\n"
-    write_readme | tee README.md ; echo
+    write_readme > README.md
 }
 
 write_readme(){
