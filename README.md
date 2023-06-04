@@ -16,8 +16,6 @@
 
 *[KeePassDX](https://github.com/oldstreetloft/android/raw/main/Apks/KeePassDX.apk)*
 
-*[Mull](https://github.com/oldstreetloft/android/raw/main/Apks/Mull.apk)*
-
 *[MullvadVPN](https://github.com/oldstreetloft/android/raw/main/Apks/MullvadVPN.apk)*
 
 *[ProtonMail](https://github.com/oldstreetloft/android/raw/main/Apks/ProtonMail.apk)*
