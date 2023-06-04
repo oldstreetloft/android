@@ -11,12 +11,7 @@ main() {
 fdroid_add() {
         # Read file line by line
         while IFS= read -r LINE; do
-                # Compare the line with the app name
-                if [[ "$LINE" = "$APP_NAME" ]]; then
-                        exit 0
-                else
-                        echo "$LINE"
-                fi
+                echo "$LINE"
                 echo "$APP_NAME"
         done < fdroid.plist
 }
