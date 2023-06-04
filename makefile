@@ -6,10 +6,12 @@ default:
 
 add:
 			bash Scripts/fdroid_add.sh			# Add new app to fdroid.plist and download /Apks
+			make list
 			make update
 
-remove:
+remove:		list
 			bash Scripts/fdroid_remove.sh		# Remove app from Apks/ fdroid.plist and README.md
+			make list
 			make commit
 
 list:
