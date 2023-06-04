@@ -1,9 +1,7 @@
 .PHONY:		all
 .SILENT:
 
-default:	update
-
-help:
+default:
 			bash Scripts/print_help.sh			# Print makefile usage
 
 add:
