@@ -8,8 +8,6 @@
 
 *[CakeWallet](https://github.com/oldstreetloft/android/raw/main/Apks/CakeWallet.apk)*
 
-*[Duress](https://github.com/oldstreetloft/android/raw/main/Apks/Duress.apk)*
-
 *[FDroid](https://github.com/oldstreetloft/android/raw/main/Apks/FDroid.apk)*
 
 *[Hushed](https://github.com/oldstreetloft/android/raw/main/Apks/Hushed.apk)*
