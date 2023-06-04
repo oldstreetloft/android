@@ -4,8 +4,6 @@ main() {
     # Download .apk from FDroid website using fdroid.plist as source, inform user of non-existant app
     printf "\nDownloading .apk files from FDroid:\n\n"
     cat "fdroid.plist" | while read APP_NAME_RAW ; do           # Itterate through each app in fdroid.plist
-        #case "$APP_NAME_RAW" in
-
         fdroid_download ; done
 }
 
