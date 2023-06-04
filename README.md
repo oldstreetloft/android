@@ -39,4 +39,4 @@
 
 *[WickrMe](https://github.com/oldstreetloft/android/raw/main/Apks/WickrMe.apk)*
 
-*[simplelogin](https://github.com/oldstreetloft/android/raw/main/Apks/simplelogin.apk)*https://play.google.com/store/apps/details?id=com.tutotoons.app.mybabyunicorn.free
+*[simplelogin](https://github.com/oldstreetloft/android/raw/main/Apks/simplelogin.apk)*
