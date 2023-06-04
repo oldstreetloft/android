@@ -11,7 +11,7 @@ main() {
 
 write_readme() {
     # Write title
-    echo "# Android Apks"
+    printf "# Android Apks"
     # Itterate through each app in apk folder, write corresponding hyperlinks
     find Apks/ -name "*.apk" | sort | while read apkfile ; do
         apkfile=$(echo $apkfile | cut -c 7-)                # hyperlink filename
