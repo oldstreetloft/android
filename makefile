@@ -16,6 +16,9 @@ rm:
 			bash Scripts/fdroid_remove.sh		# Remove app from Apks/ fdroid.plist and README.md
 			make commit
 
+ls:
+			bash Scripts/fdroid_list.sh
+
 fdroid_dl:
 			bash Scripts/fdroid_download.sh		# Download all fdroid.plist to Apks/
 

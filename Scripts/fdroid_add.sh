@@ -2,14 +2,11 @@
 
 main() {
         # Read app name for addition
-        read -p "Enter FDroid query string: " APP_NAME
+        read -p "Enter FDroid query: " APP_NAME
         # Sort and write new plist
-        printf "\nFDroid package list:\n\n"
-        fdroid_add | sort | uniq | tee fdroid_new.plist
+        fdroid_add | sort | uniq > fdroid_new.plist
         printf "# Add FDroid query above this line." >> fdroid_new.plist
         mv fdroid_new.plist fdroid.plist
-        printf "\nAdded $APP_NAME\n"
-
 }
 
 fdroid_add() {
