@@ -2,10 +2,12 @@
 
 main() {
         read -p "Enter FDroid query string: " APP_NAME
-        fdroid_remove | tee fdroid_new.plist ; echo
+        fdroid_remove >> fdroid_new.plist
+        diff fdroid.plist fdroid_new.plist
         mv fdroid_new.plist fdroid.plist
         rm -rf "Apks/$APP_NAME.apk"
 }
+
 fdroid_remove() {
         # Read file line by line
         while IFS= read -r LINE; do
