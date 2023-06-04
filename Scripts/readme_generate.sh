@@ -18,7 +18,7 @@ write_readme() {
         apkname=$(echo $apkfile | rev | cut -c 5- | rev)    # hyperlink display name
         printf "\n\n*[$apkname]($url$apkfile)*" ; done    # Write hyperlink
         query_ps_link
-        printf "\t\thttps://play.google.com$APP_LINK"
+        printf "        https://play.google.com$APP_LINK"
 }
 
 query_ps_link() {	# Query Google Playstore for the app extract app link from query
