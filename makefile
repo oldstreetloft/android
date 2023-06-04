@@ -1,7 +1,7 @@
 .PHONY:		all
 .SILENT:
 
-default:	fdroid_dl
+default:	update
 			make commit
 
 help:
@@ -9,17 +9,17 @@ help:
 
 add:
 			bash Scripts/fdroid_add.sh			# Add new app to fdroid.plist and download /Apks
-			make fdroid_dl
+			make update
 			make commit
 
-rm:
+remove:
 			bash Scripts/fdroid_remove.sh		# Remove app from Apks/ fdroid.plist and README.md
 			make commit
 
-ls:
+list:
 			bash Scripts/fdroid_list.sh
 
-fdroid_dl:
+update:
 			bash Scripts/fdroid_download.sh		# Download all fdroid.plist to Apks/
 
 commit:
