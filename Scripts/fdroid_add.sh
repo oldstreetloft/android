@@ -4,7 +4,6 @@ main() {
         read -p "Enter FDroid query string: " APP_NAME
         fdroid_add | sort | uniq | tee fdroid_new.plist
         printf "# Add FDroid query above this line." >> fdroid_new.plist
-        diff fdroid.plist fdroid_new.plist
         mv fdroid_new.plist fdroid.plist
 }
 
