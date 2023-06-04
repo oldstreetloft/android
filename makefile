@@ -13,10 +13,12 @@ fdroid_add:
 			bash Scripts/fdroid_add.sh			# Add new app to fdroid.plist download /Apks and generate README.md
 			make fdroid_download
 			make readme_generate
+			make commit
 
 fdroid_remove:
 			bash Scripts/fdroid_remove.sh		# Remove app from Apks/ fdroid.plist and README.md
 			make readme_generate
+			make commit
 
 fdroid_download:
 			bash Scripts/fdroid_download.sh		# Download all fdroid.plist to Apks/
