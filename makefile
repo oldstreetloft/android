@@ -2,7 +2,6 @@
 .SILENT:
 
 default:	update
-			make commit
 
 help:
 			bash Scripts/print_help.sh			# Print makefile usage
@@ -10,7 +9,6 @@ help:
 add:
 			bash Scripts/fdroid_add.sh			# Add new app to fdroid.plist and download /Apks
 			make update
-			make commit
 
 remove:
 			bash Scripts/fdroid_remove.sh		# Remove app from Apks/ fdroid.plist and README.md
@@ -21,6 +19,7 @@ list:
 
 update:
 			bash Scripts/fdroid_download.sh		# Download all fdroid.plist to Apks/
+			make commit
 
 commit:
 			bash Scripts/readme_generate.sh		# Generate new README.md from Apks/
