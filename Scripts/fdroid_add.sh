@@ -12,7 +12,8 @@ main() {
 fdroid_add() {
         echo "$APP_NAME"
         while IFS= read -r LINE; do
-                echo "$LINE" ; done < fdroid.plist
+                echo "$LINE"
+        done < fdroid.plist
 }
 
 # Start execution
