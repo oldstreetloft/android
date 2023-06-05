@@ -37,5 +37,3 @@
 *[WickrEnterprise](https://github.com/oldstreetloft/android/raw/main/Apks/WickrEnterprise.apk)*
 
 *[WickrMe](https://github.com/oldstreetloft/android/raw/main/Apks/WickrMe.apk)*
-
-*[simplelogin](https://github.com/oldstreetloft/android/raw/main/Apks/simplelogin.apk)*
