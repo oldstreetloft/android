@@ -30,6 +30,8 @@
 
 *[Signal](https://github.com/oldstreetloft/android/raw/main/Apks/Signal.apk)*
 
+*[SimpleLogin](https://github.com/oldstreetloft/android/raw/main/Apks/SimpleLogin.apk)*
+
 *[Warp](https://github.com/oldstreetloft/android/raw/main/Apks/Warp.apk)*
 
 *[Wasted](https://github.com/oldstreetloft/android/raw/main/Apks/Wasted.apk)*
