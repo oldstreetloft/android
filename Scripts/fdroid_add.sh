@@ -2,7 +2,7 @@
 
 main() {
         # Read app name for addition
-        read -p "Enter FDroid query: " APP_NAME
+        read -p "Enter FDroid query with spaces: " APP_NAME
         # Sort and write new plist
         fdroid_add | sort | uniq > fdroid_new.plist
         printf "# Add FDroid query above this line." >> fdroid_new.plist
