@@ -23,7 +23,7 @@ fdroid_download() {
         # Inform user about non-existant app
         [ -z "$DOWN_URL" ] && printf "\n\nERROR: $APP_NAME_PATH failed to query on F-Droid!\n\n"
         # Download apk to apk folder, check for success
-        printf "Downloading $APP_NAME_PATH"
+        printf "$APP_NAME_PATH"
         curl -sL $DOWN_URL -o "Apks/$APP_NAME_PATH.apk" && printf " ✓\n"
 }
 
