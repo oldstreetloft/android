@@ -13,9 +13,8 @@ main() {
 }
 
 fdroid_remove() {
-        while IFS= read -r LINE; do
-                [ "$LINE" != "$APP_NAME" ] && echo "$LINE"
-        done < fdroid.plist
+        cat fdroid.plist | while read LINE; do
+                [ "$LINE" != "$APP_NAME" ] && echo "$LINE" ; done
 }
 
 # Start execution

@@ -1,7 +1,5 @@
 # Android Apks
 
-*[AuroraStore](https://github.com/oldstreetloft/android/raw/main/Apks/AuroraStore.apk)*
-
 *[Bitwarden](https://github.com/oldstreetloft/android/raw/main/Apks/Bitwarden.apk)*
 
 *[BraveBrowser](https://github.com/oldstreetloft/android/raw/main/Apks/BraveBrowser.apk)*
