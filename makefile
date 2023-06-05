@@ -9,7 +9,7 @@ add:
 			make update
 
 remove:
-			bash Scripts/fdroid_remove.sh		# Remove app from fdroid.plist and remove Apks/
+			bash Scripts/fdroid_remove.sh		# Remove app from fdroid.plist and Apks/
 			make commit
 
 list:
