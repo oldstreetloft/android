@@ -1,10 +1,10 @@
 #!/bin/bash
 
 main() {
-    # Download .apk from FDroid website using fdroid.plist as source, inform user of non-existant app
-    printf "\nDownloading apks from FDroid:\n\n"
-    cat "fdroid.plist" | while read APP_NAME_RAW ; do           # Itterate through each app in fdroid.plist
-        fdroid_download ; done
+        # Download .apk from FDroid website using fdroid.plist as source, inform user of non-existant app
+        printf "\nDownloading apks from FDroid:\n\n"
+        cat "fdroid.plist" | while read APP_NAME_RAW ; do           # Itterate through each app in fdroid.plist
+                fdroid_download ; done
 }
 
 fdroid_download() {
@@ -28,4 +28,5 @@ fdroid_download() {
 }
 
 # Start execution
+clear
 main

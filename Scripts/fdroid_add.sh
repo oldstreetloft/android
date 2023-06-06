@@ -21,4 +21,5 @@ fdroid_add() {
 }
 
 # Start execution
+clear
 main
