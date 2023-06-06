@@ -2,9 +2,9 @@
 
 main() {
     MAKEFILE=$(cat makefile | tr "\t" "\n")
-    print_options
     print_usage
     print_examples
+    print_options
     echo
 }
 
