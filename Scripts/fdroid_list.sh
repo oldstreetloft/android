@@ -1,4 +1,5 @@
 #!/bin/bash
+source Scripts/print_line.sh
 
 main() {
         print_line
@@ -9,17 +10,13 @@ main() {
 }
 
 list_apks() {
-        printf "\nApk folder:\n\n"
-        ls Apks/ | tr "\t" "\n" ; echo
+        printf "Apk folder:\n\n"
+        ls Apks/ | tr "\t" "\n"
 }
 
 list_fdroid() {
-        printf "\nFDroid package list:\n\n"
-        cat fdroid.plist | sed '$d' ; echo
-}
-
-print_line() {
-    printf "================================================================================\n"
+        printf "FDroid package list:\n\n"
+        cat fdroid.plist | sed '$d'
 }
 
 # Start execution

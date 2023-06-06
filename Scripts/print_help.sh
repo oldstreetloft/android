@@ -1,4 +1,5 @@
 #!/bin/bash
+source Scripts/print_line.sh
 
 main() {
     MAKEFILE=$(cat makefile | tr "\t" "\n")
@@ -24,10 +25,6 @@ print_options() {
 print_examples() {
     printf "Examples:\n\n"
     echo "$MAKEFILE" | grep ":" | tail -n +4 | sed 's/://g' | sed 's/^/make /g'
-}
-
-print_line() {
-    printf "\n================================================================================\n\n"
 }
 
 # Start execution
