@@ -9,8 +9,8 @@ main() {
 
 fdroid_download() {
         # Format app names
-        APP_NAME_PATH=$(echo $APP_NAME_RAW | sed 's/ //g')      # Remove whitespace for use in filename and README.md
-        APP_NAME_URL=$(echo "$APP_NAME_RAW" | tr ' ' '+')       # Spaces to plus symbols for use in URLs
+        APP_NAME_PATH=$(echo $APP_NAME_RAW | sed 's/ //g')      # Remove space for use in filename and README.md
+        APP_NAME_URL=$(echo "$APP_NAME_RAW" | tr ' ' '+')       # Translates space into plus for use in URLs
         # Fetch FDroid search results to variable
         QUERY_FDROID=$(curl -sL "https://search.f-droid.org/?q=$APP_NAME_URL")
         # Parse Results for app page

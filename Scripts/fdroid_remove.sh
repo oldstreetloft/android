@@ -8,8 +8,8 @@ main() {
         fdroid_remove | sort | uniq > fdroid_new.plist
         printf "# Add FDroid query above this line." >> fdroid_new.plist
         mv fdroid_new.plist fdroid.plist
-        # Remove apk
         printf "\nRemoved $APP_NAME_RAW from fdroid.plist\n"
+        # Remove apk
         rm -rf "Apks/$APP_NAME.apk"
         printf "\nRemoved $APP_NAME.apk\n\n"
 }
