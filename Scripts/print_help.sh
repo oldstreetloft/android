@@ -2,9 +2,10 @@
 
 main() {
     MAKEFILE=$(cat makefile | tr "\t" "\n")
-    print_usage
     print_options
+    print_usage
     print_examples
+    echo
 }
 
 print_usage() {
@@ -20,7 +21,6 @@ print_options() {
 print_examples() {
     printf "\nExamples:\n\n"
     echo "$MAKEFILE" | grep ":" | tail -n +4 | sed 's/://g' | sed 's/^/make /g'
-    echo
 }
 
 # Start execution
