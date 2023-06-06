@@ -9,8 +9,9 @@ main() {
         printf "# Add FDroid query above this line." >> fdroid_new.plist
         mv fdroid_new.plist fdroid.plist
         # Remove apk
+        printf "\nRemoved $APP_NAME_RAW from fdroid.plist\n"
         rm -rf "Apks/$APP_NAME.apk"
-        printf "\nRemoved $APP_NAME_RAW\n"
+        printf "\nRemoved $APP_NAME.apk\n\n"
 }
 
 fdroid_remove() {
