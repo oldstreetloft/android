@@ -2,7 +2,7 @@
 
 main() {
         # Read app name for removal
-        read -p "Enter FDroid query with spaces: " APP_NAME_RAW
+        read -p "Enter FDroid query: " APP_NAME_RAW
         APP_NAME=$(echo $APP_NAME_RAW | sed 's/ //g')
         # Sort and write new plist
         fdroid_remove | sort | uniq > fdroid_new.plist
