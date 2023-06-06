@@ -5,10 +5,10 @@ default:
 			bash Scripts/print_help.sh			# Print makefile usage
 
 list:
-			bash Scripts/fdroid_list.sh			# List all apps tracked in fdroid.plist
+			bash Scripts/fdroid_list.sh			# List apps in Apks/ and fdroid.plist
 
 add:
-			bash Scripts/fdroid_add.sh			# Add new app to fdroid.plist and download Apks/
+			bash Scripts/fdroid_add.sh			# Add app to fdroid.plist and download Apks/
 			make update
 
 remove:
@@ -16,11 +16,11 @@ remove:
 			make commit
 
 update:
-			bash Scripts/fdroid_download.sh		# Download all apps in fdroid.plist to Apks/
+			bash Scripts/fdroid_download.sh		# Download fdroid.plist to Apks/
 			make commit
 
 commit:
-			bash Scripts/readme_generate.sh		# Generate new README.md from Apks/
-			git add --all						# Commit all repo changes
+			bash Scripts/readme_generate.sh		# Generate README.md
+			git add --all						# Commit repo changes
 			git commit -m "App updated."
 			git push ; echo
