@@ -2,9 +2,11 @@
 
 main() {
     printf "\nUsage:\n\n"
-    grep ":" makefile | tail -n +4 | sed 's/://g' | sed 's/^/make /g'
+    printf "make <option>\n"
     printf "\nOptions:\n\n"
-    cat makefile | tr "\t" "\n" | grep -e ":" -e "#" | tail -n +5 | tr "#" "\t"
+    cat makefile | tr "\t" "\n" | grep -e ":" -e "#" | tail -n +5 | sed 's/://g' | tr "#" "\t"
+    printf "\nExamples:\n\n"
+    grep ":" makefile | tail -n +4 | sed 's/://g' | sed 's/^/make /g'
     echo
 }
 
