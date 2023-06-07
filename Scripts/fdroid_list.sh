@@ -17,5 +17,4 @@ list_fdroid() {
 }
 
 # Start execution
-clear
 main

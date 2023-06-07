@@ -28,5 +28,4 @@ fdroid_download() {
 }
 
 # Start execution
-clear
 main

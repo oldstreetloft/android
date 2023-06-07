@@ -20,5 +20,4 @@ write_readme() {
 }
 
 # Start execution
-clear
 main

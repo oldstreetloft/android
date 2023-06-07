@@ -24,5 +24,4 @@ print_options() {
 }
 
 # Start execution
-clear
 main

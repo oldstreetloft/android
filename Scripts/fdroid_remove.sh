@@ -24,5 +24,4 @@ fdroid_remove() {
 }
 
 # Start execution
-clear
 main
