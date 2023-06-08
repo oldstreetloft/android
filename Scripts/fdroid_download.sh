@@ -3,14 +3,14 @@
 main() {
         # Download .apk from FDroid website using fdroid.plist as source, inform user of non-existant app
         printf "\nDownloading apks from FDroid:\n\n"
-        cat "fdroid.plist" | while read APP_NAME_RAW ; do           # Itterate through each app in fdroid.plist
+        cat "fdroid.plist" | while read APP_NAME_RAW ; do               # Itterate through each app in fdroid.plist
                 fdroid_download ; done
 }
 
 fdroid_download() {
         # Format app names
-        APP_NAME_PATH=$(echo $APP_NAME_RAW | sed 's/ //g')      # Remove space for use in filename and README.md
-        APP_NAME_URL=$(echo "$APP_NAME_RAW" | tr ' ' '+')       # Translates space into plus for use in URLs
+        APP_NAME_PATH=$(echo $APP_NAME_RAW | sed 's/ //g')              # Remove space for use in filename and README.md
+        APP_NAME_URL=$(echo "$APP_NAME_RAW" | tr ' ' '+')               # Translates space into plus for use in URLs
         # Fetch FDroid search results to variable
         QUERY_FDROID=$(curl -sL "https://search.f-droid.org/?q=$APP_NAME_URL")
         # Parse Results for app page
