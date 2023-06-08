@@ -19,7 +19,7 @@ main() {
 
 fdroid_remove() {
         cat fdroid.plist | while read LINE; do
-                # Iterate through plist and print all except the app.
+                # Iterate through plist and print all lines except the app
                 [ "$LINE" != "$APP_NAME_RAW" ] && echo "$LINE" ; done
 }
 
