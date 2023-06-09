@@ -6,13 +6,22 @@ main() {
 }
 
 list_apks() {
-        printf "\nApk folder:\n\n"
-        ls Apks/ | tr "\t" "\n"
+cat << ENDAPKS
+
+Apk folder:
+
+$(ls Apks/ | tr "\t" "\n" | sed 's/^/\t/g')
+ENDAPKS
 }
 
 list_fdroid() {
-        printf "\nFDroid package list:\n\n"
-        cat fdroid.plist | sed '$d' ; echo
+cat << ENDFDROID
+
+FDroid package list:
+
+$(cat fdroid.plist | sed '$d' | sed 's/^/\t/g' ; echo)
+
+ENDFDROID
 }
 
 # Start execution
