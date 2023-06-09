@@ -12,7 +12,7 @@ cat << ENDUSAGE
 
 USAGE:
 
-make <OPTION>
+    make <OPTION>
 ENDUSAGE
 }
 
