@@ -10,16 +10,16 @@ main() {
 print_usage() {
 cat << ENDUSAGE
 
-Usage:
+USAGE:
 
-make <option>
+make <OPTION>
 ENDUSAGE
 }
 
 print_examples() {
 cat << ENDEXAMPLES
 
-Examples:
+EXAMPLES:
 
 $(echo "$MAKEFILE" | grep ":" | tail -n +4 | sed 's/://g' | sed 's/^/make /g')
 ENDEXAMPLES
@@ -28,7 +28,7 @@ ENDEXAMPLES
 print_options() {
 cat << ENDOPTIONS
 
-Options:
+OPTIONS:
 
 $(echo "$MAKEFILE" | grep -e ":" -e "#" | tail -n +5 | sed 's/://g' | tr "#" "\t")
 
