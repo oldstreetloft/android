@@ -5,22 +5,34 @@ main() {
     print_usage
     print_examples
     print_options
-    echo
 }
 
 print_usage() {
-    printf "\nUsage:\n\n"
-    printf "make <option>\n"
+cat << ENDUSAGE
+
+Usage:
+
+make <option>
+ENDUSAGE
 }
 
 print_examples() {
-    printf "\nExamples:\n\n"
-    echo "$MAKEFILE" | grep ":" | tail -n +4 | sed 's/://g' | sed 's/^/make /g'
+cat << ENDEXAMPLES
+
+Examples:
+
+$(echo "$MAKEFILE" | grep ":" | tail -n +4 | sed 's/://g' | sed 's/^/make /g')
+ENDEXAMPLES
 }
 
 print_options() {
-    printf "\nOptions:\n\n"
-    echo "$MAKEFILE" | grep -e ":" -e "#" | tail -n +5 | sed 's/://g' | tr "#" "\t"
+cat << ENDOPTIONS
+
+Options:
+
+$(echo "$MAKEFILE" | grep -e ":" -e "#" | tail -n +5 | sed 's/://g' | tr "#" "\t")
+
+ENDOPTIONS
 }
 
 # Start execution
