@@ -30,7 +30,7 @@ cat << ENDOPTIONS
 
 OPTIONS:
 
-$(echo "$MAKEFILE" | grep -e ":" -e "#" | tail -n +5 | sed 's/://g' | sed 's/^/\t/g' | tr "#" "\t")
+$(echo "$MAKEFILE" | grep -e ":" -e "#" | tail -n +5 | sed 's/://g' | sed 's/^/\t/g' | sed 's/# /\t/g')
 
 ENDOPTIONS
 }
