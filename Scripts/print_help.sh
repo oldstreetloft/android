@@ -12,7 +12,7 @@ cat << ENDUSAGE
 
 USAGE:
 
-    make <OPTION>
+        make <OPTION>
 ENDUSAGE
 }
 
@@ -21,7 +21,7 @@ cat << ENDEXAMPLES
 
 EXAMPLES:
 
-$(echo "$MAKEFILE" | grep ":" | tail -n +4 | sed 's/://g' | sed 's/^/make /g')
+$(echo "$MAKEFILE" | grep ":" | tail -n +4 | sed 's/://g' | sed 's/^/\tmake /g')
 ENDEXAMPLES
 }
 
@@ -30,7 +30,7 @@ cat << ENDOPTIONS
 
 OPTIONS:
 
-$(echo "$MAKEFILE" | grep -e ":" -e "#" | tail -n +5 | sed 's/://g' | tr "#" "\t")
+$(echo "$MAKEFILE" | grep -e ":" -e "#" | tail -n +5 | sed 's/://g' | sed 's/^/\t/g' | tr "#" "\t")
 
 ENDOPTIONS
 }
