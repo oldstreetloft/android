@@ -22,5 +22,5 @@ update:
 commit:
 			bash Scripts/readme_generate.sh		# Generate README.md
 			git add --all						# Commit repo changes
-			git commit -m "App updated."
+			git commit -m "Apps updated."
 			git push ; echo
